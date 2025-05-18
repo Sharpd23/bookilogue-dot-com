@@ -86,12 +86,10 @@ nav a:hover {
 .hero button {
   background: #007BFF;
   border: none;
-  padding: 15px 30px;
+  padding: 15px;
   font-size: 18px;
   color: #fff;
-  border-radius: 4px;
   cursor: pointer;
-  transition: background 0.3s;
 }
 .hero button:hover {
   background: #0056b3;
@@ -106,7 +104,6 @@ nav a:hover {
 .features h2 {
   font-size: 36px;
   margin-bottom: 40px;
-  color: #333;
 }
 .features-grid {
   display: grid;
@@ -118,24 +115,24 @@ nav a:hover {
 .feature-item {
   background: #fff;
   padding: 20px;
-  border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
-.feature-item h3 {
-  font-size: 24px;
-  margin-bottom: 15px;
-  color: #007BFF;
-}
-.feature-item p {
-  font-size: 16px;
-  color: #555;
+
+/* Forms */
+#form-container {
+  display: none;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-/* Footer */
-footer {
-  background: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
-  margin-top: 40px;
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
 }

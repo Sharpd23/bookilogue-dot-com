@@ -57,16 +57,22 @@
       <h2>Sign Up</h2>
       <input type="text" id="signup-username" placeholder="Username" required>
       <input type="email" id="signup-email" placeholder="Email" required>
-      <input type="password" id="signup-password" placeholder="Password" required>
+      <div class="password-wrapper">
+        <input type="password" id="signup-password" placeholder="Password" required>
+        <span class="toggle-password" onclick="togglePassword('signup-password')">👁️</span>
+      </div>
       <button onclick="signup()">Register</button>
-      <p account? <a href="#" id="toggle-login">Login</a></p>
+      <p>Already have an account? <a href="#" id="toggle-login">Login</a></p>
     </div>
 
     <!-- Login Form -->
     <div id="login-form">
       <h2>Login</h2>
       <input type="email" id="login-email" placeholder="Email" required>
-      <input type="password" id="login-password" placeholder="Password" required>
+      <div class="password-wrapper">
+        <input type="password" id="login-password" placeholder="Password" required>
+        <span class="toggle-password" onclick="togglePassword('login-password')">👁️</span>
+      </div>
       <button onclick="login()">Login</button>
       <p>Don't have an account? <a href="#" id="toggle-signup">Sign Up</a></p>
     </div>

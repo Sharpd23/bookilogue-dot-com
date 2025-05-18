@@ -61,62 +61,6 @@ nav a:hover {
   text-align: center;
   color: #fff;
 }
-.hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-}
-.hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 800px;
-  padding: 0 20px;
-}
-.hero h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-.hero p {
-  font-size: 20px;
-  margin-bottom: 40px;
-}
-.hero button {
-  background: #007BFF;
-  border: none;
-  padding: 15px;
-  font-size: 18px;
-  color: #fff;
-  cursor: pointer;
-}
-.hero button:hover {
-  background: #0056b3;
-}
-
-/* Features Section */
-.features {
-  padding: 60px 20px;
-  background: #f9f9f9;
-  text-align: center;
-}
-.features h2 {
-  font-size: 36px;
-  margin-bottom: 40px;
-}
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.feature-item {
-  background: #fff;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
 
 /* Forms */
 #form-container {
@@ -135,4 +79,17 @@ input {
   padding: 10px;
   margin: 10px 0;
   border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.password-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
 }

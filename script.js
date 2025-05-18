@@ -55,3 +55,8 @@ function login() {
     alert("Account not found. Please sign up.");
   }
 }
+
+function togglePassword(fieldId) {
+  const field = document.getElementById(fieldId);
+  field.type = field.type === "password" ? "text" : "password";
+}

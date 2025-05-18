@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bookilogue - Home</title>
-  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <!-- Header Section -->
   <header>
     <div class="nav-container">
       <a href="#" class="logo">Bookilogue</a>
@@ -15,45 +14,32 @@
         <a href="#">Home</a>
         <a href="#">Catalog</a>
         <a href="#">Reviews</a>
-        <a href="#">Sign Up</a>
-        <a href="#">Login</a>
+        <a href="#" id="signup-link">Sign Up</a>
+        <a href="#" id="login-link">Login</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <div class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <h1>Welcome to Bookilogue</h1>
-      <p>Your Ultimate Book Review and Catalogue Platform</p>
-      <button onclick="location.href='#signup'">Join Now</button>
+  <div id="form-container">
+    <!-- Signup Form -->
+    <div id="signup-form">
+      <h2>Sign Up</h2>
+      <input type="text" id="signup-username" placeholder="Username" required>
+      <input type="email" id="signup-email" placeholder="Email" required>
+      <input type="password" id="signup-password" placeholder="Password" required>
+      <button onclick="signup()">Register</button>
+      <p>Already have an account? <a href="#" id="toggle-login">Login</a></p>
+    </div>
+
+    <!-- Login Form -->
+    <div id="login-form">
+      <h2>Login</h2>
+      <input type="email" id="login-email" placeholder="Email" required>
+      <input type="password" id="login-password" placeholder="Password" required>
+      <button onclick="login()">Login</button>
+      <p>Don't have an account? <a href="#" id="toggle-signup">Sign Up</a></p>
     </div>
   </div>
-
-  <!-- Features Section -->
-  <section class="features">
-    <h2>Discover and Explore</h2>
-    <div class="features-grid">
-      <div class="feature-item">
-        <h3>Extensive Catalogue</h3>
-        <p>Explore a vast collection of books from all genres available at your fingertips.</p>
-      </div>
-      <div class="feature-item">
-        <h3>Expert Reviews</h3>
-        <p>Read detailed book reviews by professionals and passionate readers alike.</p>
-      </div>
-      <div class="feature-item">
-        <h3>User Friendly</h3>
-        <p>Experience seamless navigation and discover your next favorite book effortlessly.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Bookilogue. All rights reserved.</p>
-  </footer>
 
   <script src="./script.js"></script>
 </body>
